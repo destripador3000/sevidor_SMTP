@@ -9,10 +9,10 @@ import (
 func main() {
 	host := "smtp.gmail.com"
 	port := "587"
-	from := "juanesvalon02@gmail.com"
-	password := "ualwjimsbanzmcfk"
+	from := ""     //Cambiar por el que sea necesario
+	password := "" //Cambiar por el que sea necesario
 
-	toList := []string{"destripador.30001@gmail.com", "juanestebanvalencia722@gmail.com"}
+	toList := []string{"corre@gmail.com", "correo2@gmail.com"}
 	msg := "Subject:Correo de prueba\r\n" + "\r\n" + "¡¡¡Esto es una prueba!!!"
 	body := []byte(msg)
 	auth := smtp.PlainAuth("", from, password, host)
